@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --color1: #0E0F13;
+    --color2: #0B40F3;
+    --color3: #5916AA;
+    --color4: #01A3FF;
+    --color5: #FFFFFF;
+    --color6: #88898D;
+}
+
+.bck {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(pcr/fond-galaxie-degrade-planetes_23-2148966974.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.first {
+
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 23% 40% auto;
+    grid-template-areas: "logo bt scm";
+    height: 63px;
+    padding-top: 120px;
+
+}
+
+.logo {
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 75px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 5px;
+}
+
+.logo img {
+    height: 150px;
+    margin-right: 2%;
+}
+
+.elemone {
+    display: inline-grid;
+}
+
+.elemone ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 38px;
+}
+
+.elemone li {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.elemone li a {
+    font-size: 70px;
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: bold;
+}
+
+.elemone li img {
+    width: 50px;
+}
+
+.elemtwo {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+
+.mgs {
+    display: flex;
+    gap: 50px;
+}
+
+.img1 {
+    border-radius: 50%;
+    background-color: #2d2b52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mgs div {
+    width: 150px;
+    box-shadow: 8px 5px 20px 2px #000311;
+}
+
+.img1 img {
+    width: 60px;
+}
+
+.img1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.elemtwo button {
+    width: 25%;
+    border-radius: 70px;
+    background-image: linear-gradient(to right, #182e79, #694595);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.elemtwo button h1 {
+    color: white;
+    font-size: xxx-large;
+    letter-spacing: 2px;
+}
+
+.elemtwo button :hover {
+    cursor: pointer;
+}
+
+.bgnd {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-areas: "pct  wrt";
+}
+
+.pct {
+    grid-area: pct;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pct img {
+    width: 2100px;
+    opacity: 10;
+}
+
+.wrtt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+}
+
+.wrtt h2 {
+    color: white;
+    font-size: 175px;
+    font-weight: 500;
+}
+
+.wrtt>h1 {
+    color: white;
+    font-size: 200px;
+    letter-spacing: 4px;
+}
+
+.wrtt p {
+    color: var(--color6);
+    font-size: 75px;
+    letter-spacing: 3px;
+    margin: 50px 0;
+}
+
+.btn-one {
+    border-radius: 70px;
+    background-image: linear-gradient(to right, #182e79, #694595);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 150px;
+    width: 550px;
+}
+
+.btn-one h1 {
+    color: white;
+    font-size: xxx-large;
+    letter-spacing: 2px;
+}
+
+.bttn {
+    display: flex;
+    gap: 5%;
+    margin-top: 50px;
+}
+
+.btn-two {
+    background-color: transparent;
+    border-radius: 70px;
+    background-image: linear-gradient(rgb(38 45 129 / 59%), rgb(62 0 205 / 8%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 150px;
+    width: 400px;
+    border-color: #6d53ff;
+}
+
+.btn-two h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 51px;
+}
+
+.bttn :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-two :hover {
+    transform: none;
+}
+
+.part-two {
+    display: flex;
+    height: 25vh;
+    margin-bottom: 5%;
+}
+
+.part {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.upp h1 {
+    background-color: transparent;
+    background-image: linear-gradient(rgb(59 60 71 / 59%), rgb(156 140 192 / 6%));
+    font-size: 5.5rem;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.down h1 {
+    text-align: center;
+    font-size: 5rem;
+    background: linear-gradient(to right, #7938c8, var(--color4));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.Stay {
+    text-align: center;
+}
+
+.sec2 h2 {
+    color: white;
+    font-size: 7.5rem;
+    margin: 1% 0;
+    font-weight: 500;
+}
+
+.sec2 h1 {
+    color: white;
+    font-size: 9.5rem;
+}
+
+.zouj {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    margin: 8% 0;
+}
+
+.abts {
+    width: 50%;
+}
+
+.kawkb {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.kawkb img {
+    width: 70%;
+}
+
+.brdr {
+    border: 8px dashed var(--color6);
+    height: 30vh;
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.brdr h2 {
+    margin: 3% 7%;
+}
+
+.brdr p {
+    font-size: 3.2rem;
+    color: var(--color6);
+    text-align: start;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    width: 90%;
+    margin-left: 7%;
+}
+
+.bttn2 {
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+    justify-content: flex-start;
+    height: inherit;
+    margin-left: 7%;
+}
+
+.btn1 {
+    border-radius: 70px;
+    background-image: linear-gradient(to right, #182e79, #694595);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 50%;
+    width: 23%;
+}
+
+.btn2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 50%;
+    width: 23%;
+    background-color: transparent;
+    border-radius: 70px;
+    background-image: linear-gradient(rgb(38 45 129 / 59%), rgb(62 0 205 / 8%));
+    border-color: #6d53ff;
+
+}
+
+.btn1,
+.btn2 :hover {
+    cursor: pointer;
+}
+
+.btn1 h1 {
+    font-size: -webkit-xxx-large;
+    font-weight: 500;
+}
+
+.btn2 h3 {
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-weight: 500;
+}
